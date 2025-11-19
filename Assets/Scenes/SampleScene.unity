@@ -978,6 +978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   ModeloBola: {fileID: 5235676400254467894, guid: b8359144e18b288489e51c5ac4fdf6bc, type: 3}
   PosicaoAtirar: {fileID: 937367526}
+  forcaAtirar: 750
 --- !u!1 &1524386121
 GameObject:
   m_ObjectHideFlags: 0
