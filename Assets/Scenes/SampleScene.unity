@@ -236,13 +236,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.06407608, y: -0, z: -0, w: 0.997945}
+  m_LocalPosition: {x: -0.33729, y: 2.02, z: -10.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 1440724257}
+  m_LocalEulerAnglesHint: {x: 7.348, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -979,6 +979,7 @@ MonoBehaviour:
   ModeloBola: {fileID: 5235676400254467894, guid: b8359144e18b288489e51c5ac4fdf6bc, type: 3}
   PosicaoAtirar: {fileID: 937367526}
   forcaAtirar: 750
+  tempoVidaBola: 10
 --- !u!1 &1524386121
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,6 +1215,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7987027009403811590, guid: 340af42427fd3c84789dfd14849e5d71, type: 3}
       insertIndex: -1
       addedObject: {fileID: 937367526}
+    - targetCorrespondingSourceObject: {fileID: 7987027009403811590, guid: 340af42427fd3c84789dfd14849e5d71, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 330585546}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5162595132738300995, guid: 340af42427fd3c84789dfd14849e5d71, type: 3}
       insertIndex: -1
@@ -1223,7 +1227,6 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 1394176017}

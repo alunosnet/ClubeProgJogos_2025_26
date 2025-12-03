@@ -1,4 +1,6 @@
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class mover_player : MonoBehaviour
 {
@@ -16,6 +18,9 @@ public class mover_player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //Esconde o cursor do rato e fica bloqueado no centro do ecrã
+        Cursor.lockState = CursorLockMode.Locked;
+
         cc = GetComponent<CharacterController>();
         if (cc==null)
         {
@@ -28,13 +33,14 @@ public class mover_player : MonoBehaviour
     {
         // Ler input
         _vertical = Input.GetAxis("Vertical");   //movimento frente/trás
-        _horizontal = Input.GetAxis("Horizontal"); //rotação do player
+        _horizontal = Input.GetAxis("Mouse X"); //rotação do player
         //calcular e aplicar a rotação
         transform.Rotate(transform.up * _horizontal * velocidade_rodar * Time.deltaTime);
 
         // calcular o movimento
         Vector3 movimento = transform.forward * _vertical * velocidade_andar * Time.deltaTime;
         //verificar se está a correr
+
         // aplicar o movimento
         cc.Move(movimento);
         //gravidade e saltar

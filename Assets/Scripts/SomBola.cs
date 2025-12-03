@@ -1,18 +1,18 @@
 using UnityEngine;
-
+/// <summary>
+/// Toca um som sempre que colide com qualquer coisa
+/// </summary>
 public class SomBola : MonoBehaviour
 {
     //Referência para o AudioSource
-    AudioSource AudioSource;
+    AudioSource _audioSource;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        _audioSource = GetComponent<AudioSource>();
     }
-
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        _audioSource.Play();
     }
 }
